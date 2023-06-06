@@ -1,0 +1,85 @@
+{
+"scenario":"immunizationLevel_20221001_v1",
+"seed":12345,
+"scale":0.01,
+"t0":"2020-02-10",
+"tend":"2022-10-01",
+"resultFolder": "results",
+"detectionProbability": {"2020-02-25":0.2,
+    "2020-05-01":0.35,
+    "2021-05-01":0.35,
+    "2021-06-01":0.47,
+    "2022-07-01":0.47,
+    "2022-08-01":0.2},
+  "plotPdfs": true,
+  "plotFits": false,
+  "observables": {
+    "WILDTYPE": {
+      "DEFAULT": {"base":1.0,"mean":818.7570930095733,"distribution": "weibull","source": "Same data as Delta (negligible small impact)"},
+      "VACC1": {"base":0.597483129728945,"mean":292.31676975622594,"distribution": "weibull","source": "Same data as Delta (negligible small impact)"},
+      "VACC2": {"base":0.8851819145572173,"mean":224.05396444200426,"distribution": "weibull","source": "Same data as Delta (negligible small impact)"},
+      "VACC3": {"base":1.0,"mean":219.84375 ,"distribution": "weibull","source": "Same data as Delta (negligible small impact)"},
+      "VACC4": {"base":1.0,"mean":219.84375 ,"distribution": "weibull","source": "Estimated to be equally effective as 3rd dose"}
+    },
+    "ALPHA": {
+      "DEFAULT": {"base":1.0,"mean":818.7570930095733,"distribution": "weibull","source": "Same data as Delta (negligible small impact)"},
+      "VACC1": {"base":0.597483129728945,"mean":292.31676975622594,"distribution": "weibull","source": "Same data as Delta (negligible small impact)"},
+      "VACC2": {"base":0.8851819145572173,"mean":224.05396444200426,"distribution": "weibull","source": "Same data as Delta (negligible small impact)"},
+      "VACC3": {"base":1.0,"mean":219.84375 ,"distribution": "weibull","source": "Same data as Delta (negligible small impact)"},
+      "VACC4": {"base":1.0,"mean":219.84375 ,"distribution": "weibull","source": "Estimated to be equally effective as 3rd dose"}
+    },
+    "DELTA": {
+      "DEFAULT": {"base":1.0,"mean":818.7570930095733,"distribution": "weibull","values":[[0,14,0.9300], [14,28,0.9917], [28,49,0.9945], [49,70,0.9971], [70,105,0.9515], [105,140,0.9079], [140,175,0.9125], [175,210,0.9092], [210,245,0.8551], [245,280,0.8336] ], "source": "Effectiveness calculated from all EMS-registered cases/reinfections between Oct 1st to Nov 1st,2021"},
+      "VACC1": {"base":0.597483129728945,"mean":292.31676975622594,"distribution": "weibull","values": [ [14,28,0.5535], [28,42,0.5850], [42,63,0.5796], [63,84,0.6232], [84,119,0.5641], [119,154,0.4535]], "source": "Effectiveness calculated from all EMS-registered cases/reinfections between Oct 1st to Nov 1st,2021"},
+      "VACC2": {"base":0.8851819145572173,"mean":224.05396444200426,"distribution": "weibull","values":[ [14,28,0.8659], [28,42,0.8585], [42,63,0.8278], [63,84,0.7756], [84,119,0.6940], [105,140,0.5914]], "source": "Effectiveness calculated from all EMS-registered cases/reinfections between Oct 1st to Nov 1st,2021"},
+      "VACC3": {"base":1.0,"mean":219.84375 , "distribution": "weibull","values": [[14,63,0.89],[63,98,0.78],[98,133,0.73],[133,168,0.65]], "source": "SARS-CoV-2 variants of concern and variants under investigation in England, Technical briefing 31, UK Health Security Agency, 2021-12-10"},
+      "VACC4": {"base":1.0,"mean":219.84375,"distribution": "weibull", "source": "Estimated to be equally effective as 3rd dose"}
+    },
+    "OMICRON_BA1": {
+      "DEFAULT": {"base":1.0, "mean":111.0992431640625,"distribution": "weibull","source": "Assuming equal cross immunity against all Omicron subtypes (original data for BA.1 to BA.2)"},
+      "OMICRON_BA1": {"base": 1.0,"mean": 400,"distribution": "weibull","source": "Calibrated using the agent-based epidemics model."},
+      "OMICRON_BA2": {"base": 1.0,"mean": 111.0992431640625,"distribution": "weibull", "source": "Assuming equal cross immunity against all Omicron subtypes (original data for BA.1 to BA.2)"},
+      "OMICRON_BA5": {"base": 1.0,"mean": 111.0992431640625,"distribution": "weibull", "source": "Assuming equal cross immunity against all Omicron subtypes (original data for BA.1 to BA.2)"},
+      "VACC1": {"base":0.36347090223920364, "mean":56.71132527001379,"distribution": "weibull","values":[[14, 28, 0.2885], [28, 42, 0.2748], [42, 63, 0.1493]],"source": "Tseng, Hung Fu, Bradley K Ackerson, Yi Luo, Lina S Sy, Carla Talarico, Yun Tian, Katia Bruxvoort, et al.2022. \"Effectiveness of MRNA-1273 against SARS-CoV-2 Omicron and Delta Variants.\"MedRxiv"},
+      "VACC2": {"base":0.5125453840020959, "mean":186.2627852712972,"distribution": "weibull","values":[[14, 90, 0.44], [90, 180, 0.235], [180, 270, 0.138]],"source": "Tseng, Hung Fu, Bradley K Ackerson, Yi Luo, Lina S Sy, Carla Talarico, Yun Tian, Katia Bruxvoort, et al.2022. \"Effectiveness of MRNA-1273 against SARS-CoV-2 Omicron and Delta Variants.\"MedRxiv"},
+      "VACC3": {"base":0.8190143703542819, "mean":149.34554962330458,"distribution": "weibull","values":[[14, 60, 0.721], [60, 120, 0.512]],"source": "Tseng, Hung Fu, Bradley K Ackerson, Yi Luo, Lina S Sy, Carla Talarico, Yun Tian, Katia Bruxvoort, et al.2022. \"Effectiveness of MRNA-1273 against SARS-CoV-2 Omicron and Delta Variants.\"MedRxiv"},
+      "VACC4": {"base":0.8190143703542819, "mean":149.34554962330458,"distribution": "weibull", "source": "Estimated to be equally effective as 3rd dose"}
+    },
+    "OMICRON_BA2": {
+      "DEFAULT": {"base": 1.0,"mean": 111.0992431640625,"distribution": "weibull","source": "Assuming equal cross immunity against all Omicron subtypes (original data for BA.1 to BA.2)"},
+      "OMICRON_BA1": {"base": 1.0,"mean": 111.0992431640625,"distribution": "weibull", "values":[ [0,18,0.9818], [18,39,0.9679], [39,60,0.7778], [60,95,0.5785], [95,130,0.4073], [130,165,0.2150], [165,200,0.1216], [200,235,0.1255] ], "source": "Effectiveness of recovery calculated from registered cases/reinfections between Feb 10 and Feb 20,2022"},
+      "OMICRON_BA2": {"base": 1.0,"mean": 400,"distribution": "weibull", "source": "Calibrated using the agent-based epidemics model."},
+      "OMICRON_BA5": {"base": 1.0,"mean": 111.0992431640625,"distribution": "weibull", "source": "Assuming equal cross immunity against all Omicron subtypes (original data for BA.1 to BA.2)"},
+      "VACC1": {"base": 0.254429631567442548, "mean":56.71132527001379,"distribution": "weibull", "source": "Vaccines estimated 30 percent less effective against BA.2 and BA.4/5 compared to BA.1"},
+      "VACC2": {"base": 0.35878176880146713, "mean":186.2627852712972,"distribution": "weibull", "source": "Vaccines estimated 30 percent less effective against BA.2 and BA.4/5 compared to BA.1"},
+      "VACC3": {"base": 0.57331005924799733, "mean":149.34554962330458,"distribution": "weibull", "source": "Vaccines estimated 30 percent less effective against BA.2 and BA.4/5 compared to BA.1"},
+      "VACC4": {"base": 0.57331005924799733, "mean":149.34554962330458,"distribution": "weibull", "source": "Vaccines estimated 30 percent less effective against BA.2 and BA.4/5 compared to BA.1"}
+    },
+    "OMICRON_BA5": {
+      "DEFAULT": {"base": 1.0,"mean": 111.0992431640625,"distribution": "weibull","source": "Assuming equal cross immunity against all Omicron subtypes (original data for BA.1 to BA.2)"},
+      "OMICRON_BA1": {"base": 1.0,"mean": 111.0992431640625,"distribution": "weibull","source": "Assuming equal cross immunity against all Omicron subtypes (original data for BA.1 to BA.2)"},
+      "OMICRON_BA2": {"base": 1.0,"mean": 111.0992431640625,"distribution": "weibull","source": "Assuming equal cross immunity against all Omicron subtypes (original data for BA.1 to BA.2)"},
+      "OMICRON_BA5": {"base": 1.0,"mean": 400,"distribution": "weibull","source": "Calibrated using the agent-based epidemics model."},
+      "VACC1": {"base": 0.254429631567442548, "mean":56.71132527001379,"distribution": "weibull", "source": "Vaccines estimated 30 percent less effective against BA.2 and BA.4/5 compared to BA.1"},
+      "VACC2": {"base": 0.35878176880146713, "mean":186.2627852712972,"distribution": "weibull", "source": "Vaccines estimated 30 percent less effective against BA.2 and BA.4/5 compared to BA.1"},
+      "VACC3": {"base": 0.57331005924799733, "mean":149.34554962330458,"distribution": "weibull", "source": "Vaccines estimated 30 percent less effective against BA.2 and BA.4/5 compared to BA.1"},
+      "VACC4": {"base": 0.57331005924799733, "mean":149.34554962330458,"distribution": "weibull", "source": "Vaccines estimated 30 percent less effective against BA.2 and BA.4/5 compared to BA.1"}
+    },
+    "HOSPITALISATION": {
+      "DEFAULT": {"base":1.0,"mean":369.94179489673115,"distribution": "weibull","values":[[0, 180, 0.878]], "source": "Altarawneh, Heba N., Hiam Chemaitelly, Mohammad R. Hasan, Houssein H. Ayoub, Suelen Qassim, Sawsan AlMukdad, Peter Coyle, et al. 2022. \"Protection against the Omicron Variant from\nPrevious SARS-CoV-2 Infection.\" New England Journal of Medicine 386 (13): 1288–90. https://doi.org/10.1056/NEJMc2200133"},
+      "VACC1": {"base":0.7317755506708294,"mean":345.4683711183611,"distribution": "weibull","values": [[14, 28, 0.73], [28, 63, 0.71], [63,98,0.52],[98,133,0.6],[133,168,0.58]], "source": "COVID-19 vaccine surveillance report, Week 8, UK Health Security Agency, 2022-02-24"},
+      "VACC2": {"base":0.7317755506708294,"mean":345.4683711183611,"distribution": "weibull","values": [[14, 28, 0.73], [28, 63, 0.71], [63,98,0.52],[98,133,0.6],[133,168,0.58]], "source": "COVID-19 vaccine surveillance report, Week 8, UK Health Security Agency, 2022-02-24"},
+      "VACC3": {"base":0.8873339418235315,"mean":216.4961454086794,"distribution": "weibull","values": [[14, 28, 0.88], [28, 63, 0.83], [63, 98, 0.75]], "source": "COVID-19 vaccine surveillance report, Week 8, UK Health Security Agency, 2022-02-24"},
+      "VACC4": {"base":0.8873339418235315,"mean":216.4961454086794,"distribution": "weibull","values": [[14, 28, 0.88], [28, 63, 0.83], [63, 98, 0.75]], "source": "COVID-19 vaccine surveillance report, Week 8, UK Health Security Agency, 2022-02-24"}
+    }
+  },
+  "vaccDelay":14,
+  "vaccIntervals":[28,180,180],
+"recoveryDelay":[19,20,21,22,23],
+"recoveryDelayUndet":[6,7,8,9,10,11],
+"detDelay":[3,4,5,6,7,8,9],
+"filenameEpidata": "data/case_data.csv",
+"filenameVaccdata": "data/vaccination_data.csv",
+"filenameVariantdata": "data/variant_data.csv",
+"filenamePopulationdata": "data/population_data.csv"
+}
