@@ -52,6 +52,3 @@ It is highly recommended to copy and modify a given config file rather than deve
 
 ### Data
 Together with the source code, the user also receives files containing sample data from Austria to test the code (`data/cases_and_hospitals.csv`). The data contains timelines of cases, hospital occupancy and icu occupancy in Austria per federal state and a forecast developed with an epidemiological model. The data was collected from the free online source https://info.gesundheitsministerium.gv.at/data/timeline-faelle-bundeslaender.csv.
-
-## License
-The developers attribute the Creative Commons NonCommercial 4.0 International (CC BY-NC 4.0) license for the source code.
