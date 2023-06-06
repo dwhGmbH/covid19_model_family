@@ -8,4 +8,4 @@ This repository contains implemented simulation models to perform decision suppo
 [Immunity Waning Model](immunity_waining_model/readme.md)
 
 ## License
-The developers attribute the Creative Commons NonCommercial 4.0 International (CC BY-NC 4.0) license for the source code.
+The developers attribute the Creative Commons NonCommercial 4.0 International (CC BY-NC 4.0) license for all source code contained in this repository.
