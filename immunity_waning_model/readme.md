@@ -70,7 +70,3 @@ contains a time-line of vaccinations against COVID-19 for each federal-state in 
 
 #### variant_data.csv
 contains a time-line of the SARS-CoV-2 variant split. It was created ourselves by smoothing the information on  [https://gisaid.org/] with logistic growth curves.
-
-
-## License
-The developers attribute the Creative Commons NonCommercial 4.0 International (CC BY-NC 4.0) license for the source code.
