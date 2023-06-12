@@ -8,4 +8,5 @@ This repository contains implemented simulation models to perform decision suppo
 [Immunity Waning Model](immunity_waining_model/readme.md)
 
 ## License
-The developers attribute the Creative Commons NonCommercial 4.0 International (CC BY-NC 4.0) license for all source code contained in this repository.
+Copyright (C) 2023 Martin Bicher - All Rights Reserved
+You may use, distribute and modify this code under the terms of the MIT license. You should have received a copy of the license with this file (LICENSE.txt). If not, please write to martin.bicher@tuwien.ac.at or visit [https://github.com/dwhGmbH/covid19_model_family/LICENSE.txt]

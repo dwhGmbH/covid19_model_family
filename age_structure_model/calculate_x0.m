@@ -1,3 +1,14 @@
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Copyrighht (C) 2023 Martin Bicher - All Rights Reserved
+% You may use, distribute and modify this code under the 
+% terms of the MIT license.
+% 
+% You should have received a copy of the MIT license with
+% this file. If not, please write to: 
+% martin.bicher@tuwien.ac.at or visit 
+% https://github.com/dwhGmbH/covid19_model_family/LICENSE.txt
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 function [S0,I0,Sv0,Iv0,R0,Pop] = calculate_x0(ageClasses,S0Raw,I0Raw,Sv0Raw,Iv0Raw,R0Raw)
 %Computes the initial conditions of the PDE model by transforming age-class
 %lists to density functions by cubic spline interpolation.
