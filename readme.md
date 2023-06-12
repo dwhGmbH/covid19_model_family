@@ -5,7 +5,7 @@ This repository contains implemented simulation models to perform decision suppo
 
 [Hospitalisation Model](hospitalisation_model/readme.md)
 
-[Immunity Waning Model](immunity_waining_model/readme.md)
+[Immunity Waning Model](immunity_waning_model/readme.md)
 
 ## License
 Copyright (C) 2023 dwh GmbH - All Rights Reserved
