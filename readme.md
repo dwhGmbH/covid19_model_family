@@ -10,3 +10,5 @@ This repository contains implemented simulation models to perform decision suppo
 ## License
 Copyright (C) 2023 Martin Bicher - All Rights Reserved
 You may use, distribute and modify this code under the terms of the MIT license. You should have received a copy of the license with this file (LICENSE.txt). If not, please write to martin.bicher@tuwien.ac.at or visit [https://github.com/dwhGmbH/covid19_model_family/LICENSE.txt](https://github.com/dwhGmbH/covid19_model_family/blob/main/LICENSE.txt)
+
+Note, that the sample data which comes together with the source code might be suject to a different license format which might be more restrictive. We refer to the readme sections of the corresponding module for license details.
